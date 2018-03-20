@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link href='style1.css' rel='stylesheet' type='text/css' >
+<body>
+<div>
+    <div class="head">
+    </div>
+    <div class="child">
+
+	<div class="menu left"><h2 class="h1"><span style="color:#555555">Company</span>Name</h2>
+	</div>
+        <div class="menu right"><ul>
+            <h3><li><a href="#">WHY</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">MEET</a></li>
+            <li><a href="#">COMPANIES</a></li>
+            <li><a href="#"class="h2">WHAT</a></li></h3>
+        </div>
+
+    </div>
+	<div class="slideshow-container" style="text-align: center;">
+
+		<div class="mySlides fade img1" >
+			<p class="fontext">WE CREATE RESPONSIVE,<br>PARALLAX AND WORDPRESS THEMES</p>
+			<p><button class="btn READMORE">READ MORE</button></p><br>
+			
+		</div>
+		<div class="mySlides fade img2"> 
+			<p class="fontext">WE CREATE RESPONSIVE,<br>PARALLAX AND WORDPRESS THEMES</p>
+			<p><button class="btn READMORE">READ MORE</button></p><br>					
+			
+		</div>
+		<div class="mySlides fade img3">
+			<p class="fontext">WE CREATE RESPONSIVE,<br>PARALLAX AND WORDPRESS THEMES</p>
+			<p><button class="btn READMORE">READ MORE</button></p><br>
+		
+		</div>
+		<div class="mySlides fade img4">
+			<p class="fontext">WE CREATE RESPONSIVE,<br>PARALLAX AND WORDPRESS THEMES</p>
+			<p><button class="btn READMORE">READ MORE</button></p><br>
+			
+		</div>
+		<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span>
+			<span class="dot"></span>	
+			
+			
+ 	</div>
+    <div class="text">
+        <h1 class="h1"><b>WHAT?</b></h1>
+        <p><b>aasfdhsgaflasl;sgl;d;fl,fal;sf,la,nme4tnjfjaajfnafa</b></br></br></p>
+        <p>CSS використовується авторами та відвідувачами веб-сторінок, щоб визначити кольори, шрифти, верстку та інші аспекти вигляду сторінки. Таке розділення може покращити сприйняття та доступність контенту, забезпечити більшу гнучкість та контроль за відображенням контенту в різних умовах, зробити контент більш структурованим та простим, прибрати повтори тощо.</br></br></p>
+    </div>
+    <div class="child">
+	<div class="footer fleft"><img src="2.jpg"><br><br> <span class="h1">CREATE</span><br><br>dsdgdjfhsgjdjadghsjaasjfsjajsrj</div>
+	<div class="footer fcenter"><img src="3.jpg"><br><br> <span class="h1">INVEST</span><br><br>dsdgdjfhsgjdjadghsjaasjfsjajsrj</div>
+	<div class="footer fright"><img src="4.jpg"><br><br> <span class="h1">ACQUIRE</span><br><br>dsdgdjfhsgjdjadghsjaasjfsjajsrj</div>
+    </div>
+</div>
+
+<script>
+	var slideIndex = 0;
+	showSlides();
+	function showSlides() {
+   		 var i;
+   		 var slides = document.getElementsByClassName("mySlides");
+   		 var dots = document.getElementsByClassName("dot");
+    		 for (i = 0; i < slides.length; i++) {
+       		 slides[i].style.display = "none";  
+   	 }
+   		 slideIndex++;
+  		 if (slideIndex > slides.length) {slideIndex = 1}    
+   		 for (i = 0; i < dots.length; i++) {
+       		 dots[i].className = dots[i].className.replace(" active", "");
+   	 }
+    		slides[slideIndex-1].style.display = "block";  
+    		dots[slideIndex-1].className += " active";
+   		setTimeout(showSlides, 2500);
+	 }
+</script>
+
+</body>
+</html>
